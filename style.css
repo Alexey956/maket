@@ -3,12 +3,12 @@ body{
     padding: 0; /*убрали внутренние отсупы по умолчанию*/
 }
 .main{
-  height: 100vh;  /*блок во всб ширину*/
+  height: 100%;  /*блок во всб ширину*/
   background-color: #0B1D26;
   color: #fff;
 }
 .preview{
-    position: relative;
+    /*position: relative;*/
     height: 100vh;
     width: 100vh;
 }
@@ -20,6 +20,37 @@ body{
     right: 0;
 }
 .previewImage{
-    background-image: url(images/HG.png);
+    /*background-image: url(images/MG.png);*/
     background-size: cover;
+    z-index: 1;
+}
+.header{
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    padding: 64px 80px;
+    height: 25px;
+    align-items: center; /*выравнивание по горизонтали*/
+}
+.nav{
+    display: flex; /*по горизонтали*/
+
+}
+.navItem{
+    cursor: pointer; /*меняется курсор при наведении */
+}
+.navItem:not(:last-child){
+    margin-right: 40px;
+}
+.accountWrapper{
+    display: flex;
+    align-items: center;
+}
+
+.accountTitle{
+    padding-left: 10px;
+}
+.titleWrapper{
+    z-index: 3;
+    top: 35%;
 }
