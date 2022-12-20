@@ -53,4 +53,25 @@ body{
 .titleWrapper{
     z-index: 3;
     top: 35%;
+    left: 10%;
+}
+.lineText{
+    font-size: 18px;
+    color: #FBD784;
+    text-transform: uppercase;
+}
+.line{
+    width: 72px;
+    height: 2px;
+    background-color: #FBD784;
+    margin-right: 32px;
+}
+.title{
+    display: flex;
+    align-items: center;
+}
+.titleDescription{
+    font-size: 88px;
+    font-weight: 600;  
+    padding-top: 32px;
 }
