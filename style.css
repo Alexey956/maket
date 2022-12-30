@@ -79,21 +79,26 @@ body{
     color: #0B1D26;
 }
 .content{
-    padding: 100px 80px;
+    padding: 100px 150px;
 }
 .section{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    column-gap: 100px;
+    align-items: center;
 }
 .sectionInfo{
     position: relative;
+    max-width: 632px;
 }
 .count{
     position: absolute;
     font-size: 240px;
-    font-weight: 700px;
+    font-weight: 700;
     opacity: 0.1;
+    top: -120px;
+    left: -110px;
 }
 .sectionHeader{
     display: flex;
@@ -116,7 +121,8 @@ body{
     padding-top: 27px;
 }
 .sectionImage{
-    width: 566px;
-    height: 720px;
-
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;    
 }
