@@ -3,7 +3,7 @@ body{
     padding: 0; /*убрали внутренние отсупы по умолчанию*/
 }
 .main{
-  height: 100%;  /*блок во всб ширину*/
+  height: 100%;  /*блок во всю ширину*/
   background-color: #0B1D26;
   color: #fff;
 }
@@ -20,7 +20,7 @@ body{
     right: 0;
 }
 .previewImage{
-    /*background-image: url(images/MG.png);*/
+    background-image: url(images/VG.png);
     background-size: cover;
     z-index: 1;
 }
@@ -52,8 +52,8 @@ body{
 }
 .titleWrapper{
     z-index: 3;
-    top: 35%;
-    left: 10%;
+    top: 25%;
+    left: 20%;
 }
 .lineText{
     font-size: 18px;
@@ -74,4 +74,49 @@ body{
     font-size: 88px;
     font-weight: 600;  
     padding-top: 32px;
+}
+.paddingLine{
+    color: #0B1D26;
+}
+.content{
+    padding: 100px 80px;
+}
+.section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+.sectionInfo{
+    position: relative;
+}
+.count{
+    position: absolute;
+    font-size: 240px;
+    font-weight: 700px;
+    opacity: 0.1;
+}
+.sectionHeader{
+    display: flex;
+    align-items: center;
+}
+.sectionTitle{
+    color: #FBD784;
+    font-size: 18px;
+    padding-left: 24px;
+    text-transform: uppercase;
+}
+.infoTitle{
+    font-size: 64px;
+    padding-top: 27px;
+    font-weight: 600;
+}
+.sectionText{
+    font-size: 18px;
+    font-weight: 700;
+    padding-top: 27px;
+}
+.sectionImage{
+    width: 566px;
+    height: 720px;
+
 }
